@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_custom_dialog"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/button_closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:src="@drawable/ic_close"
+        />
+
+    <TextView
+        android:id="@+id/text_resumeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_resume"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkGray"
+        android:layout_below="@id/text_resumeTitle"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+    <TextView
+        android:id="@+id/text_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_resumeTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_resumePrices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_resumeTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/text_resumeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_requests"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/text_titleDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_resumeTotal"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:text="@string/text_titleDescription"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@id/text_titleDescription"
+        android:hint="@string/hint_descriptionResume"
+        android:textColorHint="@color/gray"
+        android:background="@color/lightGray"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/button_conclution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_conclution"
+        android:layout_centerVertical="true"
+        android:layout_margin="32dp"
+        android:layout_below="@id/edit_text_description"
+        android:backgroundTint="@color/wine"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

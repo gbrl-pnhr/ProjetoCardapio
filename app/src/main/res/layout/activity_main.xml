@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--PARTE ROLÁVEL DO CARDÁPIO-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--========================ENTRADAS===========================-->
+            <TextView
+                android:id="@+id/text_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="140dp"
+                android:text="@string/text_entry"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_entry"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/darkGray" />
+            <!--TARTE FLAMBÉE-->
+            <TextView
+                android:id="@+id/text_tarte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_entry"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_tarte"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_tarteDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tarte"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/text_tarteDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_tarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_entry"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/text_tartePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_entry"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_tartePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/text_tarteTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tarteDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_tarteTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <!--GOUGÊRES-->
+            <TextView
+                android:id="@+id/text_gougeres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tarteTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_gougeres"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_gougeresUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tarteTime"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_gougeresUnit"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_gougeresDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_gougeres"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_gougeresDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_gougeresTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_gougeresDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_gougeresTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_gougeresPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tarteTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_gougeresPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_gougeres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_tarteTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--CANAPÉS DE STEAK TARTARE-->
+            <TextView
+                android:id="@+id/text_canapes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_gougeresTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_canapes"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_canapesTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_canapes"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_canapesTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_canapesPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_gougeresTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_canapesPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_canapes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_gougeresTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--PASTEL DE QUEIJO RACLETTE-->
+            <TextView
+                android:id="@+id/text_raclette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_canapesTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_raclette"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_racletteUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_canapesTime"
+                android:layout_marginStart="222dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_racletteUnit"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_racletteDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_raclette"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_racletteDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_racletteTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_racletteDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_racletteTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_raclettePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_canapesTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_raclettePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_raclette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_canapesTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--====================PRATOS PRINCIPAIS====================-->
+            <TextView
+                android:id="@+id/text_mainCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_racletteTime"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_mainCourses"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_mainCourses"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/darkGray" />
+
+            <!--STEAK FRITES-->
+            <TextView
+                android:id="@+id/text_steak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_mainCourses"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_steak"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_steakDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_steak"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_steakDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_steakPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_mainCourses"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_steakPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_steakTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_steakDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_steakTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_steak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_mainCourses"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--ARROZ DE PATO-->
+            <TextView
+                android:id="@+id/text_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_steakTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_rice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_riceDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/text_rice"
+                android:text="@string/text_riceDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_ricePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_steakTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_ricePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_riceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_riceDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_steakTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_steakTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--ATUM MI-CUIT DO ICI BISTRÔ-->
+            <TextView
+                android:id="@+id/text_tuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_riceTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_tuna"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_tunaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tuna"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_tunaDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_tunaPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_riceTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_tunaPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_tunaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tunaDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_tunaTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_tuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_riceTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--BOEUF BOURGUIGNON-->
+            <TextView
+                android:id="@+id/text_boeuf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tunaTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_boeuf"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_boeufDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_boeuf"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_boeufDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_boeufPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_tunaTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_boeufPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_boeufTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_boeufDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_boeufTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_boeuf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_tunaTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--====================BEBIDAS=========================-->
+            <TextView
+                android:id="@+id/text_drinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_boeufTime"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_drinks"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_drinks"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/darkGray" />
+
+            <!--LEMONADE-->
+            <TextView
+                android:id="@+id/text_lemonade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_drinks"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_lemonade"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_lemonadePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_drinks"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_lemonadePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_lemonadeQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_drinks"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_lemonadeQuantity"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_lemonade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_drinks"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--REFRIGERANTE-->
+            <TextView
+                android:id="@+id/text_soda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_lemonade"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_soda"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_sodaPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_lemonade"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_sodaPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_sodaQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_lemonade"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_sodaQuantity"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_soda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_lemonade"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--ÁGUA-->
+            <TextView
+                android:id="@+id/text_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_soda"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_water"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_waterPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_soda"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_waterPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_waterQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_soda"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_waterQuantity"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_soda"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--CAFÉ EXPRESSO-->
+            <TextView
+                android:id="@+id/text_coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_water"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_coffee"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_coffeePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_water"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_coffeePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_coffeeQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_water"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/text_coffeeQuantity"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_water"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--====================SOBREMESA====================-->
+            <TextView
+                android:id="@+id/text_deserts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_coffee"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/text_deserts"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_deserts"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/darkGray" />
+
+            <!--PAIN PERDU-->
+            <TextView
+                android:id="@+id/text_perdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_deserts"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_perdu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_perduDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_perdu"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_perduDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_perduPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_deserts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_perduPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_perduTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_perduDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_perduTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_perdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_deserts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--PROFITEROLES-->
+            <TextView
+                android:id="@+id/text_profiteroles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_perduTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_profiteroles"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_profiterolesDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_profiteroles"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/text_profiterolesDescription"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_profiterolesPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_perduTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_profiterolesPrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_profiterolesTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_profiterolesDescription"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_profiterolesTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_profiteroles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_perduTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--CRÊME BRÛLÉE-->
+            <TextView
+                android:id="@+id/text_creme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_profiterolesTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_creme"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_cremePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_profiterolesTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_cremePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_cremeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_creme"
+                android:layout_marginStart="20dp"
+                android:text="@string/text_cremeTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_creme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_profiterolesTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+            <!--MOUSSE AU CHOCOLAT-->
+            <TextView
+                android:id="@+id/text_mousse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_cremeTime"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/text_mousse"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_moussePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_cremeTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/text_moussePrice"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_mousseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_mousse"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="120dp"
+                android:text="@string/text_mousseTime"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <CheckBox
+                android:id="@+id/checkBox_mousse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_cremeTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <!--FIM DA PARTE ROLAVEL DO CARDÁPIO-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/text_restaurant"
+        android:background="@color/white"
+        />
+
+    <!--BOTÕES DE NAVEGAÇÃO-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/background_button"
+                    android:padding="8dp"
+                    android:text="@string/button_entry"
+                    android:textColor="@color/wine" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_mainCourses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/background_button"
+                    android:padding="8dp"
+                    android:text="@string/button_mainCourses"
+                    android:textColor="@color/wine" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_drinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/background_button"
+                    android:padding="8dp"
+                    android:text="@string/button_drinks"
+                    android:textColor="@color/wine" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_deserts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/background_button"
+                    android:padding="8dp"
+                    android:text="@string/button_deserts"
+                    android:textColor="@color/wine" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+<!--FIM DOS BOTÕES DE NAVEGAÇÃO-->
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:background="@color/wine" />
+
+    <TextView
+        android:id="@+id/text_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:text="@string/text_restaurant"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/wine" />
+
+    <TextView
+        android:id="@+id/text_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:text="@string/text_buy"
+        android:textColor="@color/wine"
+        android:textSize="20sp" />
+
+</RelativeLayout>

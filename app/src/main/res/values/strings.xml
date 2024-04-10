@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">ProjetoCardapio</string>
+    <string name="text_restaurant">Chez Amour</string>
+    <string name="button_entry">Entradas</string>
+    <string name="button_mainCourses">Pratos principais</string>
+    <string name="button_drinks">Bebidas</string>
+    <string name="button_deserts">Sobremesas</string>
+    <string name="text_entry">Entradas</string>
+    <string name="text_mainCourses">Pratos principais</string>
+    <string name="text_drinks">Bebidas</string>
+    <string name="text_deserts">Sobremesas</string>
+
+
+    <string name="text_tarte">Tarte Flambée</string>
+    <string name="text_tarteDescription">Massa fina com creme azedo,\ncebola, bacon e tomilho</string>
+    <string name="text_tarteTime">(Tempo de espera: 10 a 20 minutos)</string>
+    <string name="text_tartePrice">R$ 39,00</string>
+
+    <string name="text_gougeres">Gougêres</string>
+    <string name="text_gougeresDescription">Carolinas salgadas recheadas\ncom queijo gruyère</string>
+    <string name="text_gougeresTime">(Tempo de espera: 15 a 25 minutos)</string>
+    <string name="text_gougeresPrice">R$ 43,00</string>
+    <string name="text_gougeresUnit">(9 und)</string>
+
+    <string name="text_canapes">Canapés de Steak Tartare</string>
+    <string name="text_canapesTime">(Tempo de espera: 15 a 25 minutos)</string>
+    <string name="text_canapesPrice">R$ 52,00</string>
+
+    <string name="text_raclette">Pastel de Queijo Raclette</string>
+    <string name="text_racletteDescription">Com cebola caramelizada</string>
+    <string name="text_racletteTime">(Tempo de espera: 15 a 25 minutos)</string>
+    <string name="text_raclettePrice">R$ 52,00</string>
+    <string name="text_racletteUnit">(5 und)</string>
+
+    <string name="text_steak">Steak Frites</string>
+    <string name="text_steakDescription">Steak de filé-mignon com fritas\ne molho roquefort</string>
+    <string name="text_steakTime">(Tempo de espera: 40 a 60 minutos)</string>
+    <string name="text_steakPrice">R$ 75,00</string>
+
+    <string name="text_rice">Arroz de pato</string>
+    <string name="text_riceDescription">Com pato confitado, vagem e\novo frito</string>
+    <string name="text_riceTime">(Tempo de espera: 50 a 70 minutos)</string>
+    <string name="text_ricePrice">R$ 68,00</string>
+
+    <string name="text_tuna">Atum "Mi-Cuit" do Ici Bistrô</string>
+    <string name="text_tunaDescription">Atum semicru em crosta de gergelim,\npurê de batata com wasabi e molho de\ngengibre</string>
+    <string name="text_tunaTime">(Tempo de espera: 60 a 80 minutos)</string>
+    <string name="text_tunaPrice">R$ 81,00</string>
+
+    <string name="text_boeuf">Boeuf Bourguignon</string>
+    <string name="text_boeufDescription">Carne cozida em baixa temperatura,\nmolho de vinho tinto, purê de batata\ne cogumelos</string>
+    <string name="text_boeufTime">(Tempo de espera: 60 a 80 minutos)</string>
+    <string name="text_boeufPrice">R$ 76,00</string>
+
+    <string name="text_lemonade">Lemonade</string>
+    <string name="text_lemonadeQuantity">(400ml)</string>
+    <string name="text_lemonadePrice">R$ 10,00</string>
+
+    <string name="text_soda">Refrigerante</string>
+    <string name="text_sodaQuantity">(350ml)</string>
+    <string name="text_sodaPrice">R$ 7,50</string>
+
+    <string name="text_water">Água</string>
+    <string name="text_waterQuantity">(500ml)</string>
+    <string name="text_waterPrice">R$ 6,50</string>
+
+    <string name="text_coffee">Café expresso</string>
+    <string name="text_coffeeQuantity">(150ml)</string>
+    <string name="text_coffeePrice">R$ 7,00</string>
+
+    <string name="text_perdu">Pain Perdu</string>
+    <string name="text_perduDescription">Brioche na manteiga, creme inglês,\npêra em calda e purê de pêra</string>
+    <string name="text_perduTime">(Tempo de espera: 10 a 25 minutos)</string>
+    <string name="text_perduPrice">R$ 27,00</string>
+
+    <string name="text_profiteroles">Profiteroles</string>
+    <string name="text_profiterolesDescription">Carolinas recheadas com sorvete\nservidas com calda quente\nde chocolate</string>
+    <string name="text_profiterolesTime">(Tempo de espera: 10 a 25 minutos)</string>
+    <string name="text_profiterolesPrice">R$ 28,00</string>
+
+    <string name="text_creme">Crême Brûlée</string>
+    <string name="text_cremeTime">(Tempo de espera: 10 a 25 minutos)</string>
+    <string name="text_cremePrice">R$ 26,00</string>
+
+    <string name="text_mousse">Mousse au Chocolat</string>
+    <string name="text_mousseTime">(Tempo de espera: 10 a 25 minutos)</string>
+    <string name="text_moussePrice">R$ 29,00</string>
+
+    <string name="text_bottom">TOTAL: </string>
+    <string name="text_value">R$ </string>
+    <string name="text_buy">Comprar</string>
+    <string name="text_conclution">Fazer pedido</string>
+
+
+    <string name="validation_checkBox">Selecione algum item</string>
+    <string name="validation_buy">Seu pedido foi feito!</string>
+
+    <string name="text_resume">Resumo do pedido</string>
+    <string name="text_finally">Seu pedido foi enviado para o balcão do restaurante.</string>
+
+    <string name="hint_descriptionResume">Ex: Tirar a cebola, molho a parte, ponto da carne, etc.</string>
+    <string name="text_titleDescription">Alguma observação?</string>
+
+
+</resources>
